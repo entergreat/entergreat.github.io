@@ -183,6 +183,7 @@
 
 .section_2_image img.main_img {
   max-width: 540px;
+  max-height: 540px;
 }
 
 .section_2_image img.left_bottom {
@@ -307,7 +308,8 @@
 }
 
 .section_3_image img.main_image {
-  width: 100%;
+  max-width: 540px;
+  max-height: 540px;
 }
 
 .section_3_image img.right_bottom {

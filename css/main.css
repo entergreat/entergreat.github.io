@@ -590,7 +590,16 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape, .light-mod
     justify-content: flex-end;
   }
 }
-
+@media only screen and (min-width: 600px) {
+ .item-only-mobile { 
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+ .item-only-desktop { 
+    display: none;
+  }
+}
 .main-menu .gr-toggle-arrow {
   display: flex;
   align-items: center;
