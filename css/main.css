@@ -1167,7 +1167,11 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape, .light-mod
     display: flex;
   }
 }
-
+@media (max-width: 500px) {
+  .only-desktop {
+    display: none;
+  }
+}
 .navbar-toggler {
   color: var(--color-texts) !important;
   border-color: var(--color-texts) !important;

@@ -5,7 +5,7 @@
 .section_1_image .yellow_img {
   position: absolute;
   width: 19.25%;
-  height: 14.90%;
+  height: 14.9%;
   top: 21%;
   left: 7%;
 }
@@ -143,7 +143,7 @@
   -ms-transform: scale(1);
   -o-transform: scale(1);
   -webkit-box-shadow: -20px 8px 44px rgba(13, 25, 48, 0.1);
-          box-shadow: -20px 8px 44px rgba(13, 25, 48, 0.1);
+  box-shadow: -20px 8px 44px rgba(13, 25, 48, 0.1);
 }
 
 .section_1_image .middle_right {
@@ -167,7 +167,7 @@
   top: 0;
   left: 0;
   -webkit-box-shadow: 9px 9px 47px rgba(0, 32, 92, 0.15);
-          box-shadow: 9px 9px 47px rgba(0, 32, 92, 0.15);
+  box-shadow: 9px 9px 47px rgba(0, 32, 92, 0.15);
 }
 
 .section_2_image {
@@ -176,8 +176,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
 }
 
@@ -187,13 +187,14 @@
 }
 
 .section_2_image img.left_bottom {
+  max-width: 200px;
   width: 46.25%;
   height: 34.85%;
   position: absolute;
   bottom: 0;
-  left: -5%;
+  left: 8%;
   -webkit-box-shadow: -17px 17px 64px rgba(0, 32, 92, 0.1);
-          box-shadow: -17px 17px 64px rgba(0, 32, 92, 0.1);
+  box-shadow: -17px 17px 64px rgba(0, 32, 92, 0.1);
 }
 
 .section_2_image img.middle_right {
@@ -201,7 +202,7 @@
   right: 0;
   top: 50%;
   width: 16.3%;
-  height: 10.32%;
+  height: 14.32%;
   animation: sec_2_middle 3s linear infinite;
   -webkit-animation: sec_2_middle 3s linear infinite;
   transform: scale(1);
@@ -210,7 +211,15 @@
   -ms-transform: scale(1);
   -o-transform: scale(1);
 }
-
+@media only screen and (max-width: 450px) {
+  .section_2_image img.middle_right {
+     height: 12.32%;
+  }
+  .section_3_image img.top_left {
+    width: 25.5%;
+    height: 16%;
+  }
+}
 @-webkit-keyframes sec_2_middle {
   0% {
     top: 50%;
@@ -303,8 +312,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .section_3_image img.main_image {
@@ -319,7 +328,7 @@
   top: 61%;
   left: 28%;
   -webkit-box-shadow: 17px 17px 64px rgba(0, 32, 92, 0.1);
-          box-shadow: 17px 17px 64px rgba(0, 32, 92, 0.1);
+  box-shadow: 17px 17px 64px rgba(0, 32, 92, 0.1);
 }
 
 .section_3_image img.top_left {
