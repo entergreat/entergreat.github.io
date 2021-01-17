@@ -142,8 +142,8 @@
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
-  -webkit-box-shadow: -20px 8px 44px rgba(13, 25, 48, 0.1);
-  box-shadow: -20px 8px 44px rgba(13, 25, 48, 0.1);
+  -webkit-box-shadow: -20px 8px 44px rgba(13, 25, 48, 0.133);
+  box-shadow: -20px 8px 44px rgba(13, 25, 48, 0.133);
 }
 
 .section_1_image .middle_right {
@@ -338,8 +338,8 @@
 .section_3_image img.top_left {
   position: absolute;
   top: 25%;
-  left: 8%;
-  width: 23.5%;
+  left: 6%;
+  width: 25.5%;
   height: 19%;
   transform: scale(0.8);
   -webkit-transform: scale(0.8);
