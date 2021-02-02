@@ -140,8 +140,9 @@
               <div class=" pt-9 pt-lg-10">
                 <a class="btn btn-dodger-blue-2 rounded-5" href="/talk">Talk With Our Team 👋</a>
                 <span class="d-block pt-5 pt-lg-9 heading-default-color">Still confused?
-                  <a class="video-btn text-dodger-blue-2" href="https://www.youtube.com/watch?v=LWZ7iytIA6k">Check our 1
-                    min video</a>
+                  <!-- <a class="video-btn text-dodger-blue-2" href="https://www.youtube.com/watch?v=LWZ7iytIA6k">Check our 1
+                    min video</a> -->
+                    <a class="text-dodger-blue-2" href="#how-it-works">Check how it works</a>
                 </span>
               </div>
             </div>
@@ -245,7 +246,7 @@
     </div>
     <!-- End Counter Area -->
     <!-- Progress Area -->
-    <div class="pt-13 pt-md-18 pt-lg-23 pb-md-9 pb-lg-21 border-top border-default-color-1">
+    <div class="pt-13 pt-md-18 pt-lg-23 pb-md-9 pb-lg-21 border-top border-default-color-1"  id="how-it-works">
       <div class="container">
         <!-- Section Title -->
         <div class="row justify-content-center">
@@ -477,10 +478,8 @@
       </div>
       <!-- End contentThree Area -->
       <!-- TestimonialOne Area -->
-      <div class="pt-lg-19 pb-12 pb-md-18 pb-lg-31">
-        <!-- category section -->
+      <!-- <div class="pt-lg-19 pb-12 pb-md-18 pb-lg-31">
         <div class="container">
-          <!-- Section Title -->
           <div class="mb-8 mb-lg-5">
             <div class="row align-items-center justify-content-center justify-content-lg-start">
               <div class="col-lg-7 col-md-9 col-xs-10">
@@ -497,8 +496,6 @@
               </div>
             </div>
           </div>
-          <!-- End Section Title -->
-          <!-- category slider -->
           <div class="row">
             <div class="col-12">
               <div class="testimonial-one">
@@ -569,9 +566,8 @@
               </div>
             </div>
           </div>
-          <!-- End category slider -->
         </div>
-      </div>
+      </div> -->
       <!-- End category section -->
       <!-- End TestimonialOne Area -->
       <!-- promoContent Area -->
@@ -720,6 +716,26 @@
       integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
     <!-- Activation Script -->
     <script src="./js/custom.js"></script>
+
+    <script>
+      jQuery($ => {
+        // The speed of the scroll in milliseconds
+        const speed = 1000;
+    
+        $('a[href*="#"]')
+          .filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`))
+          .unbind('click.smoothScroll')
+          .bind('click.smoothScroll', event => {
+            const targetId = event.currentTarget.getAttribute('href').split('#')[1];
+            const targetElement = document.getElementById(targetId);
+    
+            if (targetElement) {
+              event.preventDefault();
+              $('html, body').animate({ scrollTop: $(targetElement).offset().top }, speed);
+            }
+          });
+      });
+    </script>
 </body>
 
 </html>
